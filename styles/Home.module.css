@@ -22,7 +22,18 @@
 }
 
 .footer a {
-  display: flex;
+  display: flex;function MyLink({ children, href }) {
+    if (href === '') href = '/';
+    return href.startsWith('/') || href.startsWith('#') ? (
+      <Link href={href}>
+        <a>{children}</a>
+      </Link>
+    ) : (
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {children}
+      </a>
+    );
+  }
   justify-content: center;
   align-items: center;
   flex-grow: 1;
