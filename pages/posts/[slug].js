@@ -160,7 +160,7 @@ const Post = ({ frontMatter, content, toc, slug }) => {
         </div>
         <h1 className="mt-12">{frontMatter.title}</h1>
         <span>{frontMatter.date}</span>
-        {/* これより以下に目次追加の記述 */}
+      {/* これより以下に目次追加の記述 */}
       <div className="space-x-2">
       {frontMatter.categories.map((category) => (
         <span key={category}>

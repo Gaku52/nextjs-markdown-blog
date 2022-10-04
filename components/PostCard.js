@@ -5,7 +5,7 @@ const PostCard = ({ post }) => {
   return (
     <Link href={`/posts/${post.slug}`}>
       <a>
-        <div className="border rounded-lg">
+        <div className="">
           <Image
             src={`/${post.frontMatter.image}`}
             width={1200}
